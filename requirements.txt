@@ -1,0 +1,20 @@
+pandas>=2.0
+numpy
+scipy
+scikit-learn
+scikit-image
+xgboost
+pyarrow
+holoviews
+matplotlib
+pytest
+Jinja2
+pyparsing
+dask
+dask-ml
+dask-jobqueue
+numba
+tqdm
+beautifulsoup4
+# keras     # optional for working with autoencoders
+# scikeras  # optional for working with autoencoders

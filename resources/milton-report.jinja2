@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-{{ bokeh_version }}.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-{{ bokeh_version }}.min.js" 
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-{{ bokeh_version }}.min.js"
+        crossorigin="anonymous"></script>
+    <style>
+    {{ css }}
+    </style>
+    <title>{{ title }}</title>
+    
+    <!-- Bokeh scripts for all included figures -->
+    {{ figure_scripts }}
+</head>
+<body>
+<div class='tm-container'>
+    <h1>{{ title }}</h1>
+    
+    {{ overview }}
+    
+    {% if model_performance is defined %}
+        <h1> Model Performance </h1>
+        {{ model_performance }}
+    {% endif %}
+    
+    {% if feature_importance is defined %}
+        <h1> Feature Importance </h1>
+        {{ feature_importance }}
+    {% endif %}
+    
+    {% if effect_sizes is defined %}
+        <h1> Effect Sizes </h1>
+        {{ effect_sizes }}
+    {% endif %}
+    
+    {% if embedding is defined %}
+        <h1> 2D Embedding Of Data </h1>
+        {{ embedding }}
+    {% endif %}
+    
+    {% if feature_embeddings is defined %}
+        <h1> Feature 2D Embeddings </h1>
+        {{ feature_embeddings }}
+    {% endif %}
+    
+    <h1>Settings Used</h1>
+    <pre> {{ settings }} </pre>
+</div>
+</body>
+</html>

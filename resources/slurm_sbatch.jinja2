@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#SBATCH --job-name="{{ name }}"
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task={{ conf.cluster.cores }}
+#SBATCH --mem={{ conf.cluster.memory}}
+#SBATCH --time=00:{{ minutes }}:00
+#SBATCH --output="{{ result_path }}/log.txt"
+#SBATCH --error="{{ result_path }}/log.txt"
+#SBATCH -p {{ scp_partition }}
+
+# extra args
+{% for k, v in extra_params.items() %}
+#SBATCH {{ k }}={{ v }}
+{% endfor %}
+
+echo "Starting Milton task: {{ conf.output.title }}"
+python -m milton "{{ result_path }}/settings.pickle"
