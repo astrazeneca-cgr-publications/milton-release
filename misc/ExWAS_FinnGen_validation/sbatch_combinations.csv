@@ -1,0 +1,2 @@
+ICD10_CODE,out_dir,mappings_dir,EXWAS_associations_file,FinnGen_summary_stats_dir
+R82,./ExWAS_finnGen_r11/,<path_to_FinnGen_ICD10_mappings_file>,<path_to_ExWAS_associations_file>,<path_to_FinnGen_GWAS_summary_stats_file>

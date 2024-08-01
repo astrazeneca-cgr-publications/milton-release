@@ -1,0 +1,2 @@
+associations_to_test_path,out_dir,code,mappings_path,finngen_res_path,test_original,list_with_all_18k_genes_path
+<path_to_associations>,<out_dir>,K80,<mappings_file>,<path_to_FinnGen_GWAS_summary_stats>,False,<path_to_file_containing_all_genes_in_a_column>
