@@ -1,9 +1,13 @@
 # MILTON: MachIne Learning PhenoType associatONs
 
-An automated framework for learning phenotype contributing factors from UK 
+**MILTON** is an automated framework for learning phenotype contributing factors from UK 
 Biobank (UKB) structured data. The tool can also be used to define case-control 
 cohorts based on continuous or binary traits contained in UKB or by prediction 
 from the fitted machine learning models.
+
+**Original Hypothesis & MILTON outcomes**: <br/>
+Standard PheWAS analyses rely on ICD10 codes annotations for patient diagnosis. However, these may result to misdiagnosed patients or even undiagnosed ones (i.e. cryptic cases). We, thus, wanted to explore first whether we could identify those cryptic cases based on common biomarker signatures shared with already diagnosed patients. This would allow us to create predictive models to detect disease (prior or after onset) across **3,000 phenotypes**, using **blood** and **urine** based **biomarkers** as well as **plasma protein** expression levels. A follow-up outcome of this analysis was to construct augmented case cohorts and perform **enhanced PheWAS** analyses, allowing us to detect novel genetic signals.
+
 
 # Installation
 
